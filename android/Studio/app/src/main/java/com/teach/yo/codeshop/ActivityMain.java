@@ -3,7 +3,6 @@ package com.teach.yo.codeshop;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -14,17 +13,18 @@ import com.teach.yo.codeshop.recycleView.RecycleViewActivity;
 import com.teach.yo.codeshop.viewpager.ViewPagerDemo;
 import com.teach.yo.toollibrary.adapter.TeaAdapter;
 import com.teach.yo.toollibrary.adapter.TeaViewHolder;
+import com.teach.yo.toollibrary.base.BaseActivity;
 
 import java.util.Arrays;
 
 /**
  * 作者：chenyo on 2015/12/26 11:33
  */
-public class ActivityMain extends AppCompatActivity {
+public class ActivityMain extends BaseActivity {
 
     private String[] activity = {"EditTextWithClear", "PullListView", "DrawerLayout", "MaterialDesign", "SwipeRefresh", "CropTest", "CustomerProgressTest",
             "autoLayout", "ObjectAnimTest", "MultAdapterTest", "HtmlTest", "ToolbarTest", "progressAnim", "BannerTabTest", "ViewPagerDemo"
-            , "FragmentPagerReFresh", "RecycleViewActivity", "ScrollLayoutTest", "OkhttpTest", "ChartViewTest", "LuckPanTest"
+            , "FragmentPagerReFresh", "RecycleViewActivity", "ScrollLayoutTest", "OkhttpTest", "ChartViewTest", "LuckPanTest","AcitvityState"
     };
 
     @Override
@@ -110,6 +110,9 @@ public class ActivityMain extends AppCompatActivity {
                     break;
                 case 20:
                     intent = new Intent(ActivityMain.this, LuckPanTest.class);
+                    break;
+                case 21:
+                    intent = new Intent(ActivityMain.this, StateResumeActivity.class);
                     break;
             }
             startActivity(intent);

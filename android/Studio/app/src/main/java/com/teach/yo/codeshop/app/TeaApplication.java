@@ -1,6 +1,8 @@
 package com.teach.yo.codeshop.app;
 
 import android.app.Application;
+import android.os.Process;
+import android.util.Log;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -13,13 +15,11 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
  */
 public class TeaApplication extends Application {
 
+    private String TAG = "TeaApplication";
 
     @Override
     public void onCreate() {
         super.onCreate();
-
-        ImageLoaderConfiguration configuration = ImageLoaderConfiguration.createDefault(this);
-        ImageLoader.getInstance().init(configuration);
-
+        Log.d(TAG, "TeaApplication onCreate pid:"+ Process.myPid());
     }
 }

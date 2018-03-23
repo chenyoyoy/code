@@ -70,25 +70,21 @@
         <activity
             android:name=".ProgressBarTest"
             android:screenOrientation="portrait" />
-        <activity android:name=".BannerTabTest"></activity>
-
+        <activity android:name=".BannerTabTest" />
         <activity
             android:name=".FragmentDataRefresh"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".recycleView.RecycleViewActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ScrollLayoutTest"
             android:screenOrientation="portrait" />
-
         <activity android:name=".OkHttpTest" />
-
         <activity android:name=".ChartViewTest" />
-
         <activity android:name=".LuckPanTest" />
+        <activity android:name=".StateResumeActivity" />
+        <activity android:name=".SystemExitActivity"></activity>
     </application>
 
 </manifest>

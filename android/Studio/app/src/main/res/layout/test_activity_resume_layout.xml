@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edt_resume_act"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40_dp"
+        android:hint="请输入名字"
+        android:padding="@dimen/size_5_dp"
+        />
+
+    <TextView
+        android:layout_marginTop="@dimen/size_50_dp"
+        android:id="@+id/tv_resume_act"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40_dp"
+        android:text="TextView保持内容"/>
+
+    <Button
+        android:id="@+id/btn_next_activity"
+        android:text="next"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/size_100_dp"
+        android:layout_height="@dimen/size_40_dp" />
+</FrameLayout>

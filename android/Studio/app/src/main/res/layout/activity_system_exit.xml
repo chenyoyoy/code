@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <Button
+        android:id="@+id/btn_resume_activity_kill"
+        android:text="kill App"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/size_100_dp"
+        android:layout_height="@dimen/size_40_dp" />
+
+</FrameLayout>
