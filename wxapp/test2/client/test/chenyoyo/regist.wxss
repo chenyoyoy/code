@@ -1,0 +1,22 @@
+/* test/chenyoyo/regist.wxss */
+
+.display_hori {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.input_left {
+  padding: 10rpx;
+  width: 30%;
+  justify-content: right;
+}
+
+.input_right {
+  padding: 10rpx;
+}
+
+btn_commit {
+  padding: 60rpx;
+}

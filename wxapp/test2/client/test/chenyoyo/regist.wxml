@@ -1,0 +1,12 @@
+<!--test/chenyoyo/regist.wxml-->
+<view class='display_hori'>
+  <text class='input_left'>姓名</text>
+  <input id='input_name' bindinput='bind_name' class='input_right' value='{{name}}' placeholder='请输入姓名'></input>
+</view>
+
+<view class='display_hori'>
+  <text class='input_left'>联系电话</text>
+  <input id='input_phone' bindinput='bind_phone' class='input_right' type='text' value='{{phone}}' placeholder='请输入手机号码'></input>
+</view>
+
+<button bindtap='commit' class='btn_commit' type='warn'>提交</button>
